@@ -1,37 +1,34 @@
 # CDTI-Demo
 
 #### 介绍
-座舱显示交通信息软件demo
+座舱显示交通信息（Cockpit Display of Traffic Information）Demo。
+
+软件采用PyQt5-GUI框架和Python3.6开发。
+
+主要功能为创建网络端口监听并接收上游发送的ADS-B应用处理数据，主要包括以下四类：
+
+基本空中交通态势感知（Basic Airborne Situation Awareness，简称：AIRB）
+
+目视间隔进近（Visual Separation on Approach，简称：VSA）
+
+场面态势感知（Surface Situation Awareness，简称：SURF）
+
+高度层变更程序（In-Trail Procedure，简称：ITP）
 
 #### 软件架构
-软件架构说明
+1.主界面UI cdti_mainform.py
 
+2.主函数 cdti_form.py
 
-#### 安装教程
+3.ARINC661协议数据接口 a661_api.py
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+4.辅助工具模块 geography_analysis.py
+
+5.网页加载 map_surf.html、js文件夹
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.安装pyqt5三方库后，python运行cdti_form.py
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+2.监听并接收上游发送的ADS-B应用处理数据
